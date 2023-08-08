@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seu título aqui</title>
+    <link rel="stylesheet" href="C:\Users\ADMIN\Desktop\Imperio_Delivery\HTML\Estilização.css">
+</head>
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery Imperio</title>
+    <meta name="description" content="Site de delivery de pizza ImperioMC">
+    <meta name="keywords" content="delivery, pizza, sabores">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- conteúdo do site aqui -->
+</body>
+</html>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo da Pizzaria">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#pagamento">Pagamento</a></li>
+            <li><a href="#entrega">Entrega</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="destaque">
+    <h2>Sabores em Destaque</h2>
+    <div class="sabores">
+        <div class="sabor">
+            <img src="margherita.png" alt="Pizza Margherita">
+            <h3>Margherita</h3>
+            <p>Deliciosa combinação de tomate, mussarela e manjericão.</p>
+            <a href="#pedido" class="botao">Fazer Pedido</a>
+        </div>
+        <div class="sabor">
+            <img src="pepperoni.png" alt="Pizza Pepperoni">
+            <h3>Pepperoni</h3>
+            <p>Generosas fatias de pepperoni cobertas com queijo derretido.</p>
+            <a href="#pedido" class="botao">Fazer Pedido</a>
+        </div>
+        <div class="sabor">
+            <img src="frango.png" alt="Pizza de Frango">
+            <h3>Frango</h3>
+            <p>Deliciosa combinação de frango, queijo e tomate.</p>
+            <a href="#pedido" class="botao">Fazer Pedido</a>
+        </div>
+    </div>
+</section>
+
+<section id="cardapio">
+    <h2>Cardápio</h2>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Tamanho</th>
+            <th>Preço</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Margherita</td>
+            <td>Deliciosa combinação de tomate, mussarela e manjericão.</td>
+            <td>
+                <select>
+                    <option>Pequena</option>
+                    <option>Média</option>
+                    <option>Grande</option>
+                </select>
+            </td>
+            <td>R$ 25,00</td>
+            <td><button class="botao-carrinho">Adicionar</button></td>
+        </tr>
+        <!-- adicione mais linhas para as outras opções de pizza -->
+    </table>
+</section>
+
+<section id="carrinho">
+    <h2>Carrinho de Compras</h2>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Margherita - Grande</td>
+            <td><input type="number" value="1"></td>
+            <td>R$ 35,00</td>
+            <td><button class="botao-remover">Remover</button></td>
+        </tr>
+        <!-- adicione mais linhas para outros itens do carrinho -->
+    </table>
+    <div class="resumo-pedido">
+        <h3>Resumo do Pedido</h3>
+        <table>
+            <tr>
+                <td>Subtotal:</td>
+                <td>R$ 35,00</td>
+            </tr>
+            <tr>
+                <td>Taxa de Entrega:</td>
+                <td>R$ 5,00</td>
+            </tr>
+            <tr>
+                <td>Total:</td>
+                <td>R$ 40,00</td>
+            </tr>
+        </table>
+        <h3>Entrega</h3>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" required>
+            <button class="botao-finalizar">Finalizar Pedido</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2023 Pizzaria Delícia. Todos os direitos reservados.</p>
+    <ul class="redes-sociais">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    <p>Entre em contato conosco: <a href="tel:0800-123-4567">0800-123-4567</a> ou <a href="mailto:contato@pizzariadelicia.com.br">contato@pizzariadelicia.com.br</a></p>
+</footer>
+
+fun main() {
+    val kotlin = "🙂"
+    println(kotlin)
+}
